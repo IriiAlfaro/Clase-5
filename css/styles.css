@@ -1,47 +1,395 @@
 body{
 
 	margin: 0;
+	font-family: 'Helvetica' serif;
 }
 
-/*----------------------------- Estilos de la navegación ------------------------ */
+/*----------------------------- Estilos de .nav-header ------------------------ */
 
-.logo{
+.nav-header{
+	position: fixed;
+	width: 100%;
+}
+.nav-header nav a img {
 
 	background-color: #1b8abe;
-	padding: 0 3.5% 0 3.5%;
+	padding: 0 3% 0 3%;
+	width: 4.3%;
+	position: absolute;
+	margin-top: -2rem;
 }
 
-nav ul a{
+.nav-header nav{
+
+	padding-top: 2%;
+	background-color: black;
+	height: 9.1%;
+}
+
+.nav-header ul{
+	margin-left: 12rem;
+}
+
+.nav-header nav a{
 	text-decoration: none;
 	color: #FFFFFF;
+	text-transform: uppercase;
 }
 
-nav{
-
-	display: inline-block;
-	padding-top: 2rem;
-	position: absolute;
-	background-color: #000000;
-	width: 100%;
-	height: 8.2%;
-	position: fixed;
+.nav-header nav a:hover{
+	border-left: 1px solid #ffffff;
+	border-right: 1px solid #ffffff;
+	padding: 0 0.4rem;
 }
 
-li{
+.nav-header li{
 	list-style: none;
 	display: inline;
-	padding:0  4rem 0 1rem;
+	padding:0  10% 0 0;
 }
 
+/*----------------------------- Estilos header ------------------------ */
+
 header{
-	background: url(../img/banner-head.jpg) no-repeat;
-	height: 29rem;
+	background: url(../img/banner-head.jpg);
+	height: 32rem;
+	width: 100%;
+	padding-top: 5rem;
 }
 
 header img{
-	margin: 0 27rem 0 27rem; 
+	margin: 0 auto;
+	display: block;
 }
 
-footer nav{
-	background-color: white;
+header p, header h2{
+	text-align: center;
 }
+header p{
+	text-transform: uppercase;
+}
+
+.white  {
+	color: #FFFFFF;
+}
+
+.hojas{
+	background: url(../img/hojas.png) no-repeat;
+	display: block;
+	height: 1rem;
+	margin: 0rem auto;
+	width: 4%;
+}
+
+header a{
+	text-decoration: none;
+	margin: 0rem auto;
+	border: 1px solid #FFFFFF;
+	color: #FFFFFF;
+	padding: 0.5rem 1.5rem;
+	display: table;
+	margin-top:	0.5rem;
+	text-transform: uppercase; 
+}
+
+header a:hover{
+	background-color: #ffffff;
+	color: #1b8abe;  
+}
+
+/*----------------------------- Estilos #content ------------------------ */
+#content{
+	max-width: 1000px;
+	margin: 0rem auto;
+	overflow: hidden;
+
+}
+
+/*----------------------------- Estilos .acerca ------------------------ */
+.acerca{
+
+	padding-top: 8rem;
+}
+.acerca p:first-child {
+
+	border-bottom: 1px solid black;
+	text-transform: uppercase;
+
+}
+
+.acerca h2{
+	text-align: center;
+	width: 44rem;
+	margin: 3rem 9rem 0;
+	margin-right: 0;
+}
+
+.left{
+	float: left;
+	width: 30rem;
+	padding-right: 2rem;
+	text-align: justify;
+}
+/* p{
+ 	text-align: justify;
+ }*/
+
+ .acerca h3{
+ 	width: 53rem;
+ 	text-align: center;
+ 	margin: 3rem 5rem 0;
+ 	padding-top: 3rem;
+ 	color: #6e7c89;
+ }
+
+ h3 a{
+ 	color: red;
+ 	text-decoration: none;
+ }
+
+ h3 span{
+ 	color: black;
+ }
+
+ /*----------------------------- Estilos .eventos-previos ------------------------ */
+
+.event{
+	text-align: center;
+	text-transform: uppercase;
+	margin: 3.5rem 0;
+}
+
+.eventos-previos .event::before{
+	background-color: black;
+   	width: 10%;
+   	height: 0.1rem;
+   	content: '';
+   	display: inline-block;
+   	margin-bottom: 0.4rem;
+   	margin-right: 0.3rem;
+
+}
+
+.eventos-previos .event::after{
+	background-color: black;
+   	width: 10%;
+   	height: 0.1rem;
+   	content: '';
+   	display: inline-block;
+   	margin-bottom: 0.4rem;
+   	margin-left: 0.3rem;
+
+}
+
+.eventos{
+	background-color: #f0f0f0;
+	margin-bottom: 1.5rem;
+}
+
+.derecha{
+	float: right;
+	width: 43rem;
+	display: block;
+	margin-top: 2rem;
+}
+
+.eventos a{
+
+	color: red;
+	text-decoration: none;
+}
+
+/*----------------------------- Estilos .citas ------------------------ */
+
+.cite1, .cite2, .cite3{
+	background-color: #f3810e;
+	color: #ffffff;
+}
+
+.cite1{
+	width: 13rem;
+	float: left;
+	height: 9rem;
+	padding: 2rem;
+}
+
+.cite2{
+	margin: 0rem auto;
+	width: 12rem;
+	padding: 3rem;
+}
+
+.cite3{
+
+	float: right;
+	width: 16%;
+	margin-top: -15rem;
+	padding: 3rem;
+}
+
+.cite1 a, .cite2 a, .cite3 a{
+	color: #e8330f;
+}
+
+/*----------------------------- Estilos #patrocinadores ------------------------ */
+
+#patrocinadores{
+	width: 100% !important;
+	background-color:#f0f0f0;
+	height: 28rem;
+	margin-top: 9rem;
+}
+
+.patrocinadores-content p:first-child{
+	border-bottom: 1px solid black;
+	padding-top: 6rem;
+
+}
+
+.patrocinadores-content h2{
+	text-align: center;
+	width: 46rem;
+	margin: 4rem 8rem 0;
+	margin-right: 0;	
+}
+
+.center{
+	text-align: center;
+	margin-top: 5rem;
+}
+
+.patrocinadores-content p a{
+	text-decoration: none;
+	color: red;
+}
+
+.patrocinadores-content{
+	max-width: 1000px;
+	margin: 0rem auto;
+}
+
+
+/*----------------------------- Estilos .drupalCR ------------------------ */
+.drupalCR{
+	text-align: center;
+	background: url(../img/dccr-fun.png) no-repeat;
+	height: 42rem;
+	width: 100% !important;
+	background-position: center;
+} 
+
+.drupalCR h2, .drupalCR p{
+	text-transform: uppercase;
+}
+
+.drupalCR h2, .drupalCR p, .drupalCR span{
+	color: #ffffff;
+}
+
+.dccr-fun{
+	background-color: rgba(28, 31, 39, 0.9);
+	height: 26rem;
+	padding-top: 15rem;
+}
+
+.dccr-fun:hover{
+	visibility: hidden;
+}
+
+/*----------------------------- Estilos .registro ------------------------ */
+.registro{
+	overflow: hidden;
+	padding-top: 6rem;
+	height: 24rem;
+}
+.line{
+ 	border-bottom: 1px solid black;
+ 	max-width: 1000px;
+ 	margin: 0rem auto;
+}
+
+.center1{
+	text-align: center;
+	margin-top: 5rem;
+
+}
+
+.center1 h3{
+	border-bottom: 0;
+}
+
+.center1 span{
+	color: #00bcf2;
+}
+
+.center1 a{
+
+	text-decoration: none;
+	border: 1px solid #00bcf2;
+	padding: 1rem 1.8rem;
+	color: red;
+}
+
+.margin{
+
+	margin-bottom: 4rem;
+}
+
+.center1 a:hover{
+
+	background-color: #00bcf2;
+	color: #ffffff;
+}
+
+/*----------------------------- Estilos footer ------------------------ */
+
+footer{
+	background-color: #2b2b2b;
+	text-align: center;
+	height: 15rem;
+}
+
+footer nav a{
+
+	color: #ffffff;
+	text-decoration: none;
+	border-bottom: 1px solid #ffffff;
+	padding: 0 0.5rem 0.7rem;
+
+}
+
+footer nav li{
+
+	list-style: none;
+	display: inline;
+	padding-left: 1rem;
+}
+
+footer img{
+	padding-top: 2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
